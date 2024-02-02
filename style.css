@@ -508,125 +508,132 @@ main hr {
 
 
 /* responsive media query start */
-@media (max-width: 1104px) {
-    .about .about-content {
-        height: 350px;
-        width: 350px;
-    }
-}
-@media (max-width: 991px) {
-    .max-width{
-        padding: 0 50px;
-    }
-}
-@media (max-width: 947px){
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .max-width{
-        max-width: 930px;
-    }
-    .about .about-content .column{
-        width: 100%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-@media (max-width: 690px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-    .projects .serv-content .card{
-        width: 100%;
-    }
-}
-@media (max-width: 500px) {
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
-        font-size: 16px;
-    }
-    .contact .right form .fields{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
-    }
+@media screen and (max-width: 1000px) {
+  body{
+    /* background-color: red; */
+    align-items: center;
+  }
+  .box{
+    flex-direction: column;
+  }
+  .firstSection{
+    flex-direction: column-reverse;
+  }
+  .firstSection .leftsection{
+    width: 100% !important;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    align-content: center
+  }
+  .firstSection .rightsection{
+    width: 1000px !important;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px
+  }
+  .about-content{
+    width: fit-content;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .about-content .column-left{
+    display: flex;
+    max-width: 0%;
+  }
+
+  .about-content .column-right{
+    margin-left:0px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .about-content .column-right .text{
+    margin:0px;
+  }
+
+  .about-content .column-right .para{
+    margin:0px;
+  }
+
+
+  .secondsection .vertical{
+    height: unset;
+  }
+  .secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .vertical-title, .vertical-des, .org{
+    left: 45px;
+  }
+
+  .org{
+    margin:5px;
+  }
+
+  .thirdsection .vertical{
+    height: unset;
+  }
+  .thirdsection{
+    max-width: 80vw;
+    margin: 200px;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  hr{
+    visibility: hidden;
+  }
+  .skills{
+    max-width:80vw;
+    margin-left:500px;
+    margin-top: 900px;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-left, .skill-right, .skill-bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services{
+    max-width:80vw;
+    margin-left:500px;
+    margin-top:200px;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serv-content{
+    margin-left: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .contact{
+    width: 500px;
+    align-items: center;
+    margin-left: 75px;
+  }
 }
